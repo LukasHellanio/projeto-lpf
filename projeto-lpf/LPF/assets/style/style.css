@@ -1,0 +1,136 @@
+body {
+
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #d8e2e6;
+  font-size: 20px;
+  background-image: url("../imagem/alistamento-militar-.png");
+  background-position: left center;
+  
+}
+
+#Servico{
+  font-size: 50px;
+  color: #345574;
+  margin-top: 5px;
+}
+
+#alistamento{
+  margin-bottom: 50px;
+  font-size: 30px;
+  color: #5b6c7e;
+}
+
+button{
+  font-size: 25px;
+  border: 2px solid #004aad;
+  background-color: white;
+  margin-top: 5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-radius: 10px;
+  
+
+}
+label{
+  color: white;
+}
+
+div{
+  margin-top: 20px;
+}
+
+table {
+    width:80%;
+    border-collapse: collapse;
+    margin: 0px 13%;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    border:none;
+}
+
+th {
+   padding:1em;
+   text-transform: capitalize;
+    background-color: #3b7889;
+    color: #ffffff;
+    text-align: center;
+    
+
+}
+th:first-child{
+  border-top-left-radius:8px !important;
+  
+}
+th:last-child{
+  border-top-right-radius:8px !important;
+}
+
+tr:first-child{
+border-top-left-radius:8px !important;
+ border-top-right-radius:8px !important;
+}
+
+tbody{
+  border-radius: 8px;
+}
+
+td{
+  padding:0.75em;
+}
+tr:nth-child(odd){
+  background-color:white !important;
+}
+tr:nth-child(even){
+  background-color:#66c9e6 !important;
+}
+
+input[type=text]{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    color: #000000;
+    width: 30%;
+    background: #ffffff;
+    height: 30px;
+    border-radius: 25px;
+    border-color: #004aad;
+    margin-top: 0.5am;
+    text-align: center;   
+}
+
+input[type=number]{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    color: #000000;
+    width: 10%;
+    background: #ffffff;
+    height: 30px;
+    border-radius: 25px;
+    border-color: #004aad;
+    margin-top: 0.5am;
+    text-align: center;
+    
+    
+}
+
+select{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    color: #000000;
+    background: #ffffff;
+    height: 30px;
+    width: 30%;
+    border-radius: 25px;
+    border-color: #004aad;
+    margin-top: 0.5am;
+    
+}
+
+
+
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="assets/style/style.css" rel="stylesheet">
+	<title>Serviço militar</title>
+</head>
+
+<body>
+	<header>
+		<h3 id="Servico">Serviço militar obrigatorio</h3>
+		<h5 id="alistamento">Cadastre-se </h5>
+	</header>
+	<main>
+		<content>
+			<label for="name">Nome:</label>
+      <br>
+      <input type="text" id="pnome" name="nome">
+      <br>
+      <label for="lname">CPF:</label>
+      <br>
+      <input type="text" id="pcpf" name="cpf" placeholder="Ex:12345678910">
+      <br>
+      <label for="age">Idade:</label>
+      <br>
+      <input type="number" id="pidade" name="idade">
+      <br>
+      <label for="genero">Gênero:</label>
+      <br>
+      <select name="genero" id="pgenero">
+         <option value="masc">Masculino</option>
+         <option value="femi">Feminino</option>
+         <option value="nbin">Não-Binário</option>
+         <option value="outro">Outro(Prefiro não Informar)</option>
+      </select>
+      <br>
+      <label for="Vacinado">Possui deficiencia?:</label>
+      <input type="checkbox" id="pvacinado" name="foivacinado">
+      <br>
+      <a href="index.html"><button> Voltar </button></a>
+      <button id="cadastrar-btn"> Cadastrar </button>
+      </content>
+      <div style="width: 100%">
+         <table>
+            <tr>
+               <th>nome</th>
+               <th>cpf</th>
+               <th>idade</th>
+               <th>genero</th>
+               <th>Deficiencia</th>
+            </tr>
+            <tr id="Copo">
+            </tr>
+         </table>
+      </div>
+      </main>
+      <script src="js/kotlin.js"></script>
+      <script src="js/main.js"></script>
+   </body>
+</html>
