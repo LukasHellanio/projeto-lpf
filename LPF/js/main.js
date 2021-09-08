@@ -64,7 +64,7 @@ if (typeof kotlin === 'undefined') {
     var deficiencia = Kotlin.isType(tmp$_3 = document.getElementById('pdeficiencia'), HTMLInputElement) ? tmp$_3 : throwCCE();
     var servico = new Servico(nome.value, cpf.value, toInt(idade.value), genero.value, deficiencia.checked);
     var minhaTabelaHeader = document.getElementById('Copo');
-    mutableList.add_11rb$(paciente);
+    mutableList.add_11rb$(servico);
     minhaTabelaHeader != null ? (minhaTabelaHeader.insertAdjacentHTML('afterend', '<td>' + nome.value + ' <\/td> <td>' + cpf.value + ' <\/td> <td>' + idade.value + ' <\/td> <td>' + retornoGenero(genero.value) + ' <\/td> <td>' + retornoDeficiencia(deficiencia.checked) + ' <\/td>'), Unit) : null;
     limparCampos(nome, cpf, idade, genero, deficiencia);
   }
