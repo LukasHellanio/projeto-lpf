@@ -64,7 +64,7 @@ fun limparCampos(nome: HTMLInputElement,cpf: HTMLInputElement,idade: HTMLInputEl
     cpf.value = ""
     idade.value = ""
     genero.value = "masc";
-    Deficiencia.checked = false;
+    deficiencia.checked = false;
 }
 
 
