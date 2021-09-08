@@ -33,12 +33,12 @@ if (typeof kotlin === 'undefined') {
     return this.genero;
   };
   Servico.prototype.component5 = function () {
-    return this.servico;
+    return this.deficiencia;
   };
   Servico.prototype.copy_1pfcl3$ = function (nome, cpf, idade, genero, deficiencia) {
     return new Servico(nome === void 0 ? this.nome : nome, cpf === void 0 ? this.cpf : cpf, idade === void 0 ? this.idade : idade, genero === void 0 ? this.genero : genero, deficiencia === void 0 ? this.deficiencia : deficiencia);
   };
-  Paciente.prototype.toString = function () {
+  Servico.prototype.toString = function () {
     return 'Servico(nome=' + Kotlin.toString(this.nome) + (', cpf=' + Kotlin.toString(this.cpf)) + (', idade=' + Kotlin.toString(this.idade)) + (', genero=' + Kotlin.toString(this.genero)) + (', deficiencia=' + Kotlin.toString(this.deficiencia)) + ')';
   };
   Servico.prototype.hashCode = function () {
