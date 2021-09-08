@@ -93,7 +93,7 @@ if (typeof kotlin === 'undefined') {
     cpf.value = '';
     idade.value = '';
     genero.value = 'masc';
-    Deficiencia.checked = false;
+    deficiencia.checked = false;
   }
   function main$lambda(it) {
     cadastrar();
