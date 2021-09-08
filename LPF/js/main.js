@@ -8,50 +8,50 @@ if (typeof kotlin === 'undefined') {
   var toInt = Kotlin.kotlin.text.toInt_pdl1vz$;
   var Unit = Kotlin.kotlin.Unit;
   var ArrayList_init = Kotlin.kotlin.collections.ArrayList_init_287e2$;
-  function Paciente(nome, cpf, idade, genero, vacinado) {
+  function Servico(nome, cpf, idade, genero, deficiencia) {
     this.nome = nome;
     this.cpf = cpf;
     this.idade = idade;
     this.genero = genero;
-    this.vacinado = vacinado;
+    this.deficiencia = deficiencia;
   }
-  Paciente.$metadata$ = {
+  Servico.$metadata$ = {
     kind: Kind_CLASS,
-    simpleName: 'Paciente',
+    simpleName: 'Servico',
     interfaces: []
   };
-  Paciente.prototype.component1 = function () {
+  Servico.prototype.component1 = function () {
     return this.nome;
   };
-  Paciente.prototype.component2 = function () {
+  Servico.prototype.component2 = function () {
     return this.cpf;
   };
-  Paciente.prototype.component3 = function () {
+  Servico.prototype.component3 = function () {
     return this.idade;
   };
-  Paciente.prototype.component4 = function () {
+  Servico.prototype.component4 = function () {
     return this.genero;
   };
-  Paciente.prototype.component5 = function () {
-    return this.vacinado;
+  Servico.prototype.component5 = function () {
+    return this.servico;
   };
-  Paciente.prototype.copy_1pfcl3$ = function (nome, cpf, idade, genero, vacinado) {
-    return new Paciente(nome === void 0 ? this.nome : nome, cpf === void 0 ? this.cpf : cpf, idade === void 0 ? this.idade : idade, genero === void 0 ? this.genero : genero, vacinado === void 0 ? this.vacinado : vacinado);
+  Servico.prototype.copy_1pfcl3$ = function (nome, cpf, idade, genero, deficiencia) {
+    return new Servico(nome === void 0 ? this.nome : nome, cpf === void 0 ? this.cpf : cpf, idade === void 0 ? this.idade : idade, genero === void 0 ? this.genero : genero, deficiencia === void 0 ? this.deficiencia : deficiencia);
   };
   Paciente.prototype.toString = function () {
-    return 'Paciente(nome=' + Kotlin.toString(this.nome) + (', cpf=' + Kotlin.toString(this.cpf)) + (', idade=' + Kotlin.toString(this.idade)) + (', genero=' + Kotlin.toString(this.genero)) + (', vacinado=' + Kotlin.toString(this.vacinado)) + ')';
+    return 'Servico(nome=' + Kotlin.toString(this.nome) + (', cpf=' + Kotlin.toString(this.cpf)) + (', idade=' + Kotlin.toString(this.idade)) + (', genero=' + Kotlin.toString(this.genero)) + (', deficiencia=' + Kotlin.toString(this.deficiencia)) + ')';
   };
-  Paciente.prototype.hashCode = function () {
+  Servico.prototype.hashCode = function () {
     var result = 0;
     result = result * 31 + Kotlin.hashCode(this.nome) | 0;
     result = result * 31 + Kotlin.hashCode(this.cpf) | 0;
     result = result * 31 + Kotlin.hashCode(this.idade) | 0;
     result = result * 31 + Kotlin.hashCode(this.genero) | 0;
-    result = result * 31 + Kotlin.hashCode(this.vacinado) | 0;
+    result = result * 31 + Kotlin.hashCode(this.deficiencia) | 0;
     return result;
   };
-  Paciente.prototype.equals = function (other) {
-    return this === other || (other !== null && (typeof other === 'object' && (Object.getPrototypeOf(this) === Object.getPrototypeOf(other) && (Kotlin.equals(this.nome, other.nome) && Kotlin.equals(this.cpf, other.cpf) && Kotlin.equals(this.idade, other.idade) && Kotlin.equals(this.genero, other.genero) && Kotlin.equals(this.vacinado, other.vacinado)))));
+  Servico.prototype.equals = function (other) {
+    return this === other || (other !== null && (typeof other === 'object' && (Object.getPrototypeOf(this) === Object.getPrototypeOf(other) && (Kotlin.equals(this.nome, other.nome) && Kotlin.equals(this.cpf, other.cpf) && Kotlin.equals(this.idade, other.idade) && Kotlin.equals(this.genero, other.genero) && Kotlin.equals(this.deficiencia, other.deficiencia)))));
   };
   var mutableList;
   var colsHeader;
@@ -61,14 +61,14 @@ if (typeof kotlin === 'undefined') {
     var cpf = Kotlin.isType(tmp$_0 = document.getElementById('pcpf'), HTMLInputElement) ? tmp$_0 : throwCCE();
     var idade = Kotlin.isType(tmp$_1 = document.getElementById('pidade'), HTMLInputElement) ? tmp$_1 : throwCCE();
     var genero = Kotlin.isType(tmp$_2 = document.getElementById('pgenero'), HTMLSelectElement) ? tmp$_2 : throwCCE();
-    var vacinado = Kotlin.isType(tmp$_3 = document.getElementById('pvacinado'), HTMLInputElement) ? tmp$_3 : throwCCE();
-    var paciente = new Paciente(nome.value, cpf.value, toInt(idade.value), genero.value, vacinado.checked);
+    var deficiencia = Kotlin.isType(tmp$_3 = document.getElementById('pdeficiencia'), HTMLInputElement) ? tmp$_3 : throwCCE();
+    var servico = new Servico(nome.value, cpf.value, toInt(idade.value), genero.value, deficiencia.checked);
     var minhaTabelaHeader = document.getElementById('Copo');
     mutableList.add_11rb$(paciente);
-    minhaTabelaHeader != null ? (minhaTabelaHeader.insertAdjacentHTML('afterend', '<td>' + nome.value + ' <\/td> <td>' + cpf.value + ' <\/td> <td>' + idade.value + ' <\/td> <td>' + retornoGenero(genero.value) + ' <\/td> <td>' + retornoVacina(vacinado.checked) + ' <\/td>'), Unit) : null;
-    limparCampos(nome, cpf, idade, genero, vacinado);
+    minhaTabelaHeader != null ? (minhaTabelaHeader.insertAdjacentHTML('afterend', '<td>' + nome.value + ' <\/td> <td>' + cpf.value + ' <\/td> <td>' + idade.value + ' <\/td> <td>' + retornoGenero(genero.value) + ' <\/td> <td>' + retornoDeficiencia(deficiencia.checked) + ' <\/td>'), Unit) : null;
+    limparCampos(nome, cpf, idade, genero, deficiencia);
   }
-  function retornoVacina(s) {
+  function retornoDeficiencia(s) {
     var tmp$;
     if (s) {
       tmp$ = 'Sim';
@@ -88,12 +88,12 @@ if (typeof kotlin === 'undefined') {
       default:return 'Outro';
     }
   }
-  function limparCampos(nome, cpf, idade, genero, vacinado) {
+  function limparCampos(nome, cpf, idade, genero, deficiencia) {
     nome.value = '';
     cpf.value = '';
     idade.value = '';
     genero.value = 'masc';
-    vacinado.checked = false;
+    Deficiencia.checked = false;
   }
   function main$lambda(it) {
     cadastrar();
@@ -104,7 +104,7 @@ if (typeof kotlin === 'undefined') {
     var cadastrarBtn = Kotlin.isType(tmp$ = document.getElementById('cadastrar-btn'), HTMLButtonElement) ? tmp$ : throwCCE();
     cadastrarBtn.addEventListener('click', main$lambda);
   }
-  _.Paciente = Paciente;
+  _.Servico = Servico;
   Object.defineProperty(_, 'mutableList', {
     get: function () {
       return mutableList;
@@ -116,12 +116,12 @@ if (typeof kotlin === 'undefined') {
     }
   });
   _.cadastrar = cadastrar;
-  _.retornoVacina_6taknv$ = retornoVacina;
+  _.retornoVacina_6taknv$ = retornoDeficiencia;
   _.retornoGenero_61zpoe$ = retornoGenero;
   _.limparCampos_er0um8$ = limparCampos;
   _.main = main;
   mutableList = ArrayList_init();
-  colsHeader = listOf(['nome', 'cpf', 'idade', 'genero', 'vacinado']);
+  colsHeader = listOf(['nome', 'cpf', 'idade', 'genero', 'deficiencia']);
   main();
   Kotlin.defineModule('main', _);
   return _;
